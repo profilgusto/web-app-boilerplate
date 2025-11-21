@@ -1,0 +1,11 @@
+node_modules
+.git
+.gitignore
+.vscode
+.DS_Store
+.next
+out
+coverage
+__tests__/reports
+docker-compose*.yml
+README.md

@@ -1,0 +1,14 @@
+services:
+  web:
+    build:
+      context: .
+      target: runner
+      dockerfile: Dockerfile
+      args:
+        - NODE_VERSION=20-alpine
+    container_name: snct-mapa-prod
+    environment:
+      - NODE_ENV=production
+    ports:
+      - '3000:3000'
+    restart: unless-stopped
